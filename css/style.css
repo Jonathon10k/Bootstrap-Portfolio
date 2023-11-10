@@ -1,0 +1,30 @@
+/* Custom properties */
+
+:root {
+  --primary-text-colour: rgb(63, 77, 108, 1);
+  --primary-bg-colour: #92cacd;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav */
+
+.navbar-brand {
+  font-size: 2rem;
+  padding: 0px 60px 3px 0px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: underline;
+  margin: 0px 5px;
+  background-color: #7e7e7e;
+}
+
+.navbar {
+  border-bottom: 3px solid #0aa1bf;
+}
