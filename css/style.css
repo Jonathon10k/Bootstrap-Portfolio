@@ -2,16 +2,22 @@
 
 :root {
   --primary-text-colour: rgb(63, 77, 108, 1);
-  --primary-bg-colour: #92cacd;
+  --primary-bg-colour: rgb(237, 235, 246);
+  --primary-accent-colour:  rgb(198, 53, 53);
+  --primary-accent-transparent: rgb(198, 53, 53, 0.9);
 }
 
 body {
   padding: 0;
   margin: 0;
-  background-color: rgba(237, 235, 246);
+  background-color: white;
 }
 
 /*** Nav ***/
+
+.navbar {
+  height: 70px;
+}
 
 .navbar-brand {
   font-size: 2rem;
@@ -23,6 +29,29 @@ body {
   color: white;
   font-size: 1.2rem;
   margin: 0px 5px;
+  padding: 0;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0;
+  background-color: white;
+  left: 50%;
+  bottom: -1px;
+  transition: width 0.2s ease-in-out, left 0.2s ease-in-out;
+  transform-origin: 50% 50%;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .navbar {
@@ -36,17 +65,64 @@ body {
 /*** Jumbotron ***/
 
 .jumbotron {
-  margin-top: 3px;
-  padding: 20px 0px;
-  background-color: lightgrey;
-  justify-content: space-between;
+  margin-top: 5px;
+  padding: 20px 0px 10px 0px;
+  background-image: url("../images/ethan-thompson-zCYaSP5PHy8-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: right;
+  position: relative;
 }
+
+.jumbotron::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primary-accent-transparent);
+  z-index: 0;
+
+}
+
 
 .jumbotron img {
   margin-bottom: 10px;
 }
 
-#about-me-submitBtn {
+#jumbotron-container {
+  position: relative;
+  z-index: 1;
+}
+
+#jumbotron-h1 {
+  background-color: rgb(44, 46, 53);
+  padding: 5px 20px;
+  width: 45%;
+  align-self: flex-end;
+  color: rgba(237, 235, 246);
+  -webkit-box-shadow: -13px 16px 4px -3px rgba(251, 251, 251, 0.27);
+  box-shadow: -13px 16px 4px -3px rgba(251, 251, 251, 0.5);
+}
+
+#jumbotron-avatar {
+  width: 200px;
+}
+
+#jumbotron--lead {
+  color: white;
+  width: 50%;
+}
+
+
+#jumbotron--para {
+  color: white;
+  width: 70%;
+}
+
+
+#jumbotron-submitBtn {
   display: block;
 }
 
@@ -58,14 +134,35 @@ body {
 }
 
 .container {
-  border: 1px solid purple;
+
 }
 
-#section-container {
-  border-left: 4px solid black;
-  padding: 20px;
+section {
+  margin: 20px 0px 0px 0px;
 }
 
-.portfolio-section {
-  margin: 15px 0px;
+
+.section-h1 {
+  color: white;
+  font-size: 2.5rem;
+  padding: 10px;
+  width: auto;
+  
+  background-color: rgb(44, 46, 53);
+}
+
+.card {
+  border: 1px solid darkgrey;
+}
+
+.card-body {
+  border-top: 2px solid darkgrey;
+}
+
+#section-contact {
+  background-color: rgb(44, 46, 53);
+}
+
+#section-work {
+  width: 100%;
 }
