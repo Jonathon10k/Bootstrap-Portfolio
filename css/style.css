@@ -227,6 +227,7 @@ justify-content: space-around;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 40px;
+  padding-right: 20px;
 }
 
 .contact-ul a, .contact-ul li {
@@ -246,6 +247,7 @@ justify-content: space-around;
 #contact-about {
   border-left: 2px solid white;
   display: flex;
+  padding-top: 20px;
   flex-direction: row;
 }
 
@@ -280,5 +282,18 @@ justify-content: space-around;
   width: 4px;
   opacity: 0.9;
     z-index: 1000;   
+  }
+
+  #section-skills .row {
+    height: 50px;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+
+  #section-contact {
+    background-color: rgb(44, 46, 53);
+    border-top: 15px solid var(--primary-accent-colour);
+    height: 400px;
+    margin-bottom: 15px;
   }
 }
