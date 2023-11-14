@@ -13,6 +13,23 @@ body {
   background-color: white;
 }
 
+section {
+  margin: 10px 0px 0px 0px;
+  padding: 0;
+  width: 100%;
+}
+
+
+.section-h1 {
+  color: white;
+  font-size: 2.5rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: auto;
+  background-color: rgb(44, 46, 53);
+  border-bottom: 5px solid var(--primary-accent-colour);
+}
+
 /*** Nav ***/
 
 .navbar {
@@ -62,6 +79,10 @@ body {
   background-color: rgb(44, 46, 53);
 }
 
+.navbar-toggler-icon {
+  color: white;
+  background-color: white;
+}
 /*** Jumbotron ***/
 
 .jumbotron {
@@ -70,8 +91,8 @@ body {
   background-image: url("../images/ethan-thompson-zCYaSP5PHy8-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: right;
   position: relative;
+  z-index: 1;
 }
 
 .jumbotron::after {
@@ -82,87 +103,168 @@ body {
   left: 0;
   right: 0;
   background-color: var(--primary-accent-transparent);
-  z-index: 0;
-
+  z-index: -1;
 }
 
-
-.jumbotron img {
-  margin-bottom: 10px;
-}
-
-#jumbotron-container {
-  position: relative;
-  z-index: 1;
+#jumbotron-headings {
+ align-self: left;
 }
 
 #jumbotron-h1 {
   background-color: rgb(44, 46, 53);
-  padding: 5px 20px;
-  width: 45%;
+  padding: 5px 10px 5px 40px;
   align-self: flex-end;
   color: rgba(237, 235, 246);
   -webkit-box-shadow: -13px 16px 4px -3px rgba(251, 251, 251, 0.27);
   box-shadow: -13px 16px 4px -3px rgba(251, 251, 251, 0.5);
+  z-index: 4;
+}
+
+#jumbotron-h2 {
+  padding-left: 40%;
+  font-size: 1.8rem;
+}
+
+#jumbotron-about-section {
+justify-content: space-around;
 }
 
 #jumbotron-avatar {
   width: 200px;
+  z-index: 0;
 }
 
 #jumbotron--lead {
   color: white;
-  width: 50%;
+  text-align: left;
+  z-index: 4;
+  padding: 0;
 }
-
 
 #jumbotron--para {
   color: white;
   width: 70%;
+  text-align: left;
+  z-index: 0;
 }
 
+.jumbotron a, .jumbotron a:visited {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  font-weight: bolder;
+  border-bottom: 1px solid white;
+}
+
+.jumbotron a:hover {
+  color: lightgrey;
+}
 
 #jumbotron-submitBtn {
   display: block;
 }
 
-/*** Hero banner ***/
-
-#hero-banner {
-  background-color: #08829b;
-  padding: 30px 0px;
-}
-
-.container {
-
-}
-
-section {
-  margin: 20px 0px 0px 0px;
-}
-
-
-.section-h1 {
-  color: white;
-  font-size: 2.5rem;
-  padding: 10px;
-  width: auto;
-  
-  background-color: rgb(44, 46, 53);
-}
-
-.card {
-  border: 1px solid darkgrey;
-}
-
-.card-body {
-  border-top: 2px solid darkgrey;
-}
-
-#section-contact {
-  background-color: rgb(44, 46, 53);
-}
+/*** Work section ***/
 
 #section-work {
   width: 100%;
+}
+
+.card {
+  border: 2px solid rgb(44, 46, 53);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  z-index: 2;
+}
+
+.card-body {
+  background-color: rgb(44, 46, 53);
+  color: white;
+  height: auto;
+  z-index: 2;
+}
+
+.card img {
+  z-index: 1;
+  overflow: hidden;
+}
+
+.card .btn {
+  width: 40%;
+}
+
+/** Skills section ***/
+#section-skills ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 90px;
+}
+
+/*** Contact / About section ***/
+
+#section-contact {
+  background-color: rgb(44, 46, 53);
+  border-top: 15px solid var(--primary-accent-colour);
+  height: 350px;
+}
+
+#contact-contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#contact-contact li {
+  margin: 0px 10px;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+
+/*** Utilities  ***/
+
+.zoom:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.bg-html {
+  background-color: rgb(17, 52, 167);
+  padding: 0px 2px;
+}
+
+.bg-css {
+  background-color: rgb(179, 156, 30);
+  padding: 0px 2px;
+}
+
+@media only screen and (max-width: 500px) {
+ 
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin: 0 auto;
+  }
+  #jumbotron-h1 {
+    background-color: rgb(44, 46, 53);
+    padding: 2px;
+    display: block;
+    width: auto;
+ align-self: flex-start;
+    color: rgba(237, 235, 246);
+    -webkit-box-shadow: -13px 16px 4px -3px rgba(251, 251, 251, 0.27);
+    box-shadow: -13px 16px 4px -3px rgba(251, 251, 251, 0.5);
+    z-index: 4;
+  }
+
+  #jumbotron-h2, #jumbotron-avatar {
+    padding: 2px 0px;
+    margin: 0 auto;
+    
+  }
+
 }

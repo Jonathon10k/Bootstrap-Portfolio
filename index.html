@@ -1,195 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JG Edward - Bootstrap Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <!-- Nav begins -->
-    <nav class="navbar navbar-expand-lg nav-bg-colour justify-content-end">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">JG Edward</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#section-about-me">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#section-contact">Contact Me</a>
-            </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JG Edward - Bootstrap Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <!-- Nav begins -->
+  <nav class="navbar navbar-expand-lg nav-bg-colour justify-content-end">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">JG Edward</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section-about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-contact">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav ends -->
+
+  <!-- Jumbotron begins (sec 1) -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container" id="section-jumbotron">
+      <div class="row">
+        <div class="col-md-6" id="jumbotron-headings">
+          <h1 class="display-5 text-center" id="jumbotron-h1">Front-end web developer</h1>
+          <h2 class="display-9 mt-2 mb-2 text-white mt-3 text-center" id="jumbotron-h2">Based in Birmingham, UK</h2>
+        </div>
+      </div>
+      <div class="row flex-col">
+        <div class="col-6 col-sm-8 ms-auto text-center mb-3" id="jumbotron-about-section">
+          <img src="./images/avatar.png" class="img-fluid" id="jumbotron-avatar"
+            alt="An avatar image of JG Edward" />
+          <p class="lead text-center mb-3" id="jumbotron--lead">
+            Hi! I'm <strong>JG Edward</strong>, an aspiring front-end web
+            developer based in the UK. Here you can find out about my <a href="#section-skills">skills</a>, view my previous <a href="#section-work">work</a>, or <a href="#section-contact">contact me</a> to discuss a project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Jumbotron ends -->
+
+  <!-- Work section begins (sec 2) -->
+  <section id="section-work">
+    <div class="container container-fluid" id="section-container">
+      <h1 class="display-4 section-h1" id="section-work-h1">My Work</h1>
+      <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card mt-2 mb-2">
+            <img class="card-img-top zoom" src="./images/01-screenshot.png"
+              alt="Screenshot of a portfolio project made using HTML & CSS">
+            <div class="card-body text-center">
+              <h5 class="card-title">Portfolio</h5>
+              <p class="card-text">A portfolio page created with <strong><span class="bg-html">HTML</span> &
+                  <span class="bg-css">CSS</span></strong></p>
+              <a href="https://jonathon10k.github.io/my-portfolio/" target="_blank" class="btn btn-danger">Live View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card mt-2 mb-2">
+            <img class="card-img-top zoom" src="./images/03-screenshot.png"
+              alt="Screenshot of a study guide made using HTML & CSS">
+            <div class="card-body text-center">
+              <h5 class="card-title">Study Guide</h5>
+              <p class="card-text">A pre-work study guide created with <strong><span class="bg-html">HTML</span> & <span
+                    class="bg-css">CSS</span></strong></p>
+              <a href="https://jonathon10k.github.io/prework-study-guide/" target="_blank" class="btn btn-danger">Live
+                View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card mt-2 mb-2">
+            <img class="card-img-top zoom" src="./images/02-screenshot.png"
+              alt="Screenshot of a landing page made using HTML & CSS">
+            <div class="card-body text-center">
+              <h5 class="card-title">Landing Page</h5>
+              <p class="card-text">A landing page created with <strong><span class="bg-html">HTML</span> & <span
+                    class="bg-css">CSS</span></strong></p>
+              <a href="https://jonathon10k.github.io/project-landing-page/" target="_blank" class="btn btn-danger">Live
+                View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card mt-2 mb-2">
+            <img class="card-img-top zoom" src="./images/04-screenshot.png" alt="a placeholder image">
+            <div class="card-body text-center">
+              <h5 class="card-title">Placeholder</h5>
+              <p class="card-text">A placeholder project made with <strong><span class="bg-html">HTML</span> & <span
+                    class="bg-css">CSS</span></strong></p>
+              <a href="#" target="_blank" class="btn btn-danger">Live View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card mt-2 mb-2">
+            <img class="card-img-top zoom" src="./images/04-screenshot.png" alt="a placeholder image">
+            <div class="card-body text-center">
+              <h5 class="card-title">Placeholder</h5>
+              <p class="card-text">A placeholder project made with <strong><span class="bg-html">HTML</span> & <span
+                    class="bg-css">CSS</span></strong></p>
+              <a href="#" target="_blank" class="btn btn-danger">Live View</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card mt-2 mb-2">
+            <img class="card-img-top zoom" src="./images/04-screenshot.png" alt="a placeholder image">
+            <div class="card-body text-center">
+              <h5 class="card-title">Placeholder</h5>
+              <p class="card-text">A placeholder project made with <strong><span class="bg-html">HTML</span> & <span
+                    class="bg-css">CSS</span></strong></p>
+              <a href="#" target="_blank" class="btn btn-danger">Live View</a>
+            </div>
+          </div>
+        </div>
+  </section>
+  <!-- Work section ends -->
+
+  <!-- Skills section begins (sec 3) -->
+  <section id="section-skills">
+    <div class="container container-fluid" id="section-container">
+      <h1 class="display-4 section-h1" id="section-work-h1">My Skills</h1>
+      <div class="row">
+        <!-- Contact portion -->
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <ul class="skills-ul d-flex flex-row border">
+            <li><span class="bg-html">HTML</span>5</li>
+            <li>CSS3</li>
+            <li>Bootstrap 5.3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Figma</li>
+            <li>Chrome DevTools</li>
+            <li>Git & GitHub</li>
           </ul>
         </div>
       </div>
-    </nav>
-    <!-- Nav ends -->
-
-    <!-- Jumbotron begins (sec 1) -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container text-right" id="section-jumbotron">
-        <div class="row">
-          <div class="col-sm-12 col-md-8 col-lg-12 d-flex flex-column" id="jumbotron-container">
-            <h1 class="display-5" id="jumbotron-h1">Front-end web developer</h1>
-            <h2 class="display-10 mt-2 mb-2 text-white">Based in Birmingham, UK</h2>
-            <div class="col-sm-12 col-md-4 col-lg-4">
-              <img
-                src="./images/avatar.png"
-                class="img-fluid" id="jumbotron-avatar"
-                alt="An image of the page author"
-              />
-            </div>
-            <div class="col-sm-12 col-md-8 col-lg-12 text-left flex-column border">
-            <p class="lead text-left border" id="jumbotron--lead">
-              Hi! I'm <strong>JG Edward</strong>, an aspiring front-end web
-              developer based in the UK.
-            </p>
-            <p class="text-white" id="jumbotron--para">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
-        </div>
-        <button
-        type="button"
-        class="btn btn-outline-danger mt-auto ms-auto"
-        id="jumbotrone-submitBtn"
-        data-bs-target="#contact-me"
-      >
-        Contact me
-      </button></div>
     </div>
-      </div>
-    </div>
-    <!-- Jumbotron ends -->
+  </section>
+  <!-- Skills section ends -->
 
-    <!-- Work section begins (sec 2) -->
-    <section id="section-work">
-      <div class="container container-fluid" id="section-container">
-        <h1 class="display-4 section-h1" id="section-work-h1">My Work</h1>
-        <div class="row">
-         
-          <!-- Card 1 -->
-          <div class="col-md-3">
-          <div class="card">
-            <img class="card-img-top" src="./images/01-screenshot.png" alt="Screenshot of a portfolio project made using HTML & CSS">
-            <div class="card-body text-center">
-              <h5 class="card-title">Portfolio</h5>
-              <p class="card-text">A personal portfolio page created with <strong>HTML & CSS</strong></p>
-              <a href="https://jonathon10k.github.io/my-portfolio/" target="_blank" class="btn btn-primary">Live View</a>
-            </div>
-          </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="col-md-3">
-          <div class="card">
-            <img class="card-img-top" src="./images/02-screenshot.png" alt="Screenshot of a landing page made using HTML & CSS">
-            <div class="card-body text-center">
-              <h5 class="card-title">Landing Page</h5>
-              <p class="card-text">A landing page created with <strong>HTML & CSS</strong></p>
-              <a href="https://jonathon10k.github.io/project-landing-page/" target="_blank" class="btn btn-primary">Live View</a>
-            </div>
-          </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="col-md-3">
-          <div class="card">
-            <img class="card-img-top" src="./images/03-screenshot.png" alt="Screenshot of a study guide made using HTML & CSS">
-            <div class="card-body text-center">
-              <h5 class="card-title">Study Guide</h5>
-              <p class="card-text">A simple pre-work study guide created with <strong>HTML & CSS</strong></p>
-              <a href="https://jonathon10k.github.io/prework-study-guide/" target="_blank" class="btn btn-primary">Live View</a>
-            </div>
-          </div>
-          </div>
-          <!-- Card 4 -->
-          <div class="col-md-3">
-          <div class="card">
-            <img class="card-img-top" src="./images/01-screenshot.png" alt="a placeholder image">
-            <div class="card-body text-center">
-              <h5 class="card-title">Portfolio</h5>
-              <p class="card-text">A placeholder project made with <strong>HTML & CSS</strong></p>
-              <a href="#" target="_blank" class="btn btn-primary">Live View</a>
-            </div>
-          </div>
-          </div>
-        </section>
-   <!-- Work section ends -->
-
-    <!-- Skills section begins (sec 3) -->
-    <section id="section-skills">
-      <div class="container container-fluid" id="section-container">
-        <h1 class="display-4 section-h1" id="section-work-h1">My Skills</h1>
-        <div class="row">
-          <div class="col-md-4">
-            <ul class="skills-ul">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Bootstrap 5.3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Figma</li>
-                <li>Chrome DevTools</li>
-                <li>Git & GitHub</li>
-            </ul>
-          </div>
-        </div>
-        </div>
-        </section>
-   <!-- Skills section ends -->
-
-   <!-- Contact section begins (sec 3) -->
-   <section id="section-contact">
+  <!-- Contact section begins (sec 3) -->
+  <section id="section-contact">
     <div class="container container-fluid" id="section-container">
       <h1 class="display-4 section-h1" id="section-work-h1">Contact Me</h1>
-      <div class="row">
-        <div class="col-md-8">
-          <ul class="contact-ul">
-            <li><a href="#">myemail@website.com</a></li>
+      <div class="row border">
+        <div class="col-sm-12 col-md-6 col-lg-6 border" id="contact-contact">
+          <ul class="contact-ul d-flex flex-row">
+            <li class="ml-3 ml-3"><a href="#">myemail@website.com</a></li>
             <li><a href="https://github.com/Jonathon10k">GitHub</a></li>
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Spotify</a></li>
           </ul>
         </div>
-      </div>
-      </div>
-      </section>
- <!-- Contact section ends -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <div class="col-sm-12 col-md-6 col-lg-6 border" id="contact-about">
+          Some text here
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact section ends -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
