@@ -34,8 +34,8 @@ section {
 
 .navbar {
   height: 70px;
+  z-index: 1000;
 }
-
 .navbar-brand {
   font-size: 2rem;
   color: white;
@@ -195,13 +195,23 @@ justify-content: space-around;
 }
 
 /** Skills section ***/
+#section-skills .row {
+  height: 50px;
+  padding: 0px;
+}
 #section-skills ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  font-size: 90px;
+  justify-content: space-around;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
+#section-skills ul li {
+  margin: 0px 2px;
+  text-decoration: none;
+  list-style-type: none;
+}
 /*** Contact / About section ***/
 
 #section-contact {
@@ -210,20 +220,40 @@ justify-content: space-around;
   height: 350px;
 }
 
-#contact-contact ul {
+.contact-ul {
+  text-align: center;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding-top: 40px;
 }
-#contact-contact li {
-  margin: 0px 10px;
+
+.contact-ul a, .contact-ul li {
+  margin: 5px;
   color: white;
   text-decoration: none;
   list-style-type: none;
+  color: white;
 }
 
+.contact-ul li a:hover {
+  box-shadow: -2px 0px 0px 11px rgba(198,53,53,0.75);
+  -webkit-box-shadow: -2px 0px 0px 11px rgba(198,53,53,0.75);
+  -moz-box-shadow: -2px 0px 0px 11px rgba(198,53,53,0.75);
+}
 
+#contact-about {
+  border-left: 2px solid white;
+  display: flex;
+  flex-direction: row;
+}
 
+#contact-about img {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+}
 /*** Utilities  ***/
 
 .zoom:hover {
@@ -239,32 +269,4 @@ justify-content: space-around;
 .bg-css {
   background-color: rgb(179, 156, 30);
   padding: 0px 2px;
-}
-
-@media only screen and (max-width: 500px) {
- 
-  .jumbotron {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    margin: 0 auto;
-  }
-  #jumbotron-h1 {
-    background-color: rgb(44, 46, 53);
-    padding: 2px;
-    display: block;
-    width: auto;
- align-self: flex-start;
-    color: rgba(237, 235, 246);
-    -webkit-box-shadow: -13px 16px 4px -3px rgba(251, 251, 251, 0.27);
-    box-shadow: -13px 16px 4px -3px rgba(251, 251, 251, 0.5);
-    z-index: 4;
-  }
-
-  #jumbotron-h2, #jumbotron-avatar {
-    padding: 2px 0px;
-    margin: 0 auto;
-    
-  }
-
 }

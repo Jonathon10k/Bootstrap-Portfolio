@@ -44,16 +44,16 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container" id="section-jumbotron">
       <div class="row">
-        <div class="col-md-6" id="jumbotron-headings">
+        <div class="col-sm-12 col-md-12 col-lg-6" id="jumbotron-headings">
           <h1 class="display-5 text-center" id="jumbotron-h1">Front-end web developer</h1>
           <h2 class="display-9 mt-2 mb-2 text-white mt-3 text-center" id="jumbotron-h2">Based in Birmingham, UK</h2>
         </div>
       </div>
       <div class="row flex-col">
-        <div class="col-6 col-sm-8 ms-auto text-center mb-3" id="jumbotron-about-section">
+        <div class="col-sm-12 col-md-12 col-lg-6 ms-auto text-center mb-3" id="jumbotron-about-section">
           <img src="./images/avatar.png" class="img-fluid" id="jumbotron-avatar"
             alt="An avatar image of JG Edward" />
-          <p class="lead text-center mb-3" id="jumbotron--lead">
+          <p class="lead text-center mb-3 md-auto" id="jumbotron--lead">
             Hi! I'm <strong>JG Edward</strong>, an aspiring front-end web
             developer based in the UK. Here you can find out about my <a href="#section-skills">skills</a>, view my previous <a href="#section-work">work</a>, or <a href="#section-contact">contact me</a> to discuss a project.
           </p>
@@ -154,10 +154,9 @@
     <div class="container container-fluid" id="section-container">
       <h1 class="display-4 section-h1" id="section-work-h1">My Skills</h1>
       <div class="row">
-        <!-- Contact portion -->
         <div class="col-sm-12 col-md-12 col-lg-12">
-          <ul class="skills-ul d-flex flex-row border">
-            <li><span class="bg-html">HTML</span>5</li>
+          <ul class="skills-ul d-flex flex-row flex-wrap border">
+            <li>HTML5</li>
             <li>CSS3</li>
             <li>Bootstrap 5.3</li>
             <li>JavaScript</li>
@@ -172,22 +171,25 @@
   </section>
   <!-- Skills section ends -->
 
-  <!-- Contact section begins (sec 3) -->
+  <!-- Contact section begins (sec 4) -->
   <section id="section-contact">
     <div class="container container-fluid" id="section-container">
-      <h1 class="display-4 section-h1" id="section-work-h1">Contact Me</h1>
-      <div class="row border">
-        <div class="col-sm-12 col-md-6 col-lg-6 border" id="contact-contact">
+      <h1 class="display-4 section-h1" id="section-work-h1">Contact Me / About</h1>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6" id="contact-contact">
           <ul class="contact-ul d-flex flex-row">
-            <li class="ml-3 ml-3"><a href="#">myemail@website.com</a></li>
-            <li><a href="https://github.com/Jonathon10k">GitHub</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="https://github.com/Jonathon10k" target="_blank">GitHub</a></li>
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Spotify</a></li>
           </ul>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-6 border" id="contact-about">
-          Some text here
+        <div class="col-sm-12 col-md-6 col-lg-6" id="contact-about">
+          <img src="./images/avatar.png" class="image-fluid" alt="A small avatar image of JG Edward">
+          <p class="text-white mx-auto ms-auto pt-20">JG Edward is an aspiring front-end web developer based in the UK.
+            He is currently studying a front-end web development bootcamp and looks forward to entering the professional
+            web development industry and helping businesses and individuals meet their digital creativity needs.</p>
         </div>
       </div>
     </div>
